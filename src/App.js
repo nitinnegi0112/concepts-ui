@@ -3,8 +3,8 @@ import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import Forgetpass from "./pages/Forgetpass";
 import Resetpass from "./pages/Resetpass";
-import React, { component } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (

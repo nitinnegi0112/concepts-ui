@@ -31,6 +31,9 @@
 .breadcrum-link {
   font-size: 0.75rem;
   color: #b1b1c0;
+  cursor:pointer
+}.breadcrum-link:hover{
+  color: #3d405c;
 }
 .active-link {
   color: #3d405c;

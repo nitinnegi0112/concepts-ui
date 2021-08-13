@@ -29,14 +29,14 @@ const DashboardBody = () => {
 
       <ul className="breadcrum">
         <li className="breadcrum-item">
-          <a href="" className="breadcrum-link">
+          <span className="breadcrum-link">
             Dashboard{" "}
-          </a>
+          </span>
         </li>
         <li className="breadcrum-item ">
-          <a href="" className="breadcrum-link active-link">
+          <span className="breadcrum-link active-link">
             E-Commerce Dashboard Template
-          </a>
+          </span>
         </li>
       </ul>
       <div className="chart-row">

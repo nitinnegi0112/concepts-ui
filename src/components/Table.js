@@ -2,6 +2,7 @@ import React from "react";
 import "./Table.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import productPic from "../assets/images/product-pic.jpg";
 const Table = () => {
   const data = [
     {
@@ -70,13 +71,15 @@ const Table = () => {
         <tbody>
           {data.map((item) => {
             return (
-              <tr>
+              <tr key={item.id}>
                 <td>{item.serialNo}</td>
                 <td>
                   <div>
                     <img
-                      src="../assets/images/product-pic.jpg"
+                      src={productPic}
                       alt="user"
+                    
+                      style={{height:'32px',width:'32px',borderRadius:'2px'}}
                       
                     />
                   </div>
@@ -93,7 +96,7 @@ const Table = () => {
                     <FontAwesomeIcon
                       icon={faCircle}
                       color={`${item.status ==='InTransit'?'#ffb739':'#21ae41'}`}
-                      size='xs'
+                      size='xs' 
                     ></FontAwesomeIcon>{" "}
                   </span>
                   {item.status}

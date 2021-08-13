@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <nav className="navbar">
         <div className="navbar-left">
-          <a href="">Concept</a>
+          <a href="/">Concept</a>
         </div>
         <div className="navbar-right">
         <div class="navbar-right-search">  

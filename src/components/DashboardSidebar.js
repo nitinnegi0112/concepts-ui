@@ -1,17 +1,10 @@
-import React,{useState} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faRocket,
-  faChartPie,
-  faTable,
-  faCalendar,
-} from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+
 import "./DashboardSidebar.css";
-import {Link,useHistory } from 'react-router-dom';
+import {useHistory } from 'react-router-dom';
 const DashboardSidebar = () => {
   const history = useHistory();
-  const [expand,setExpand] = useState(false);
+ 
   const data = [
     {
       id: 1,
@@ -39,7 +32,7 @@ const DashboardSidebar = () => {
         {data.map((item) => {
 
           return (
-            <li className={`sidebar-menu-item ${item.link ==='/dashboard' ? 'active' :''}`}>
+            <li className={`sidebar-menu-item ${item.link ==='/dashboard' ? 'active' :''}`} key={item.id}>
               <p onClick={()=>history.push(item.link)}>{item.text}</p>
             </li>
           );
