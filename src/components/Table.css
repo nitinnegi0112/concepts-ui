@@ -1,0 +1,22 @@
+.table {
+  margin-top: 2em;
+  background-color: #fff;
+  padding: 1em;
+  width: 75%;
+  border-spacing: 10px 10px;
+  box-shadow: 0px 1px 2px 1px rgb(154 154 204 / 22%);
+  border-radius: 2px;
+}
+table {
+  width: 100%;
+}
+tr {
+  border: solid thin;
+}
+thead th {
+  padding: 0.5em;
+}
+td {
+  padding: 0.5em;
+  text-align: center;
+}
